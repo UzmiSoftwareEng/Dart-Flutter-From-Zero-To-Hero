@@ -31,6 +31,7 @@ class ContainerDecorationApp extends StatelessWidget {
           height: 200,
           decoration: BoxDecoration(
             color: Colors.blue,
+           // borderRadius: BorderRadius.only(topRight: Radius.circular(15),  bottomLeft: Radius.circular(15),),
               border: Border.all(
               width: 5,
               color: Colors.black,
@@ -38,7 +39,7 @@ class ContainerDecorationApp extends StatelessWidget {
               boxShadow: [
                 BoxShadow(
               blurRadius: 15,
-                  spreadRadius: 7,
+                  //spreadRadius: 7,
           )
               ],
             shape: BoxShape.circle
