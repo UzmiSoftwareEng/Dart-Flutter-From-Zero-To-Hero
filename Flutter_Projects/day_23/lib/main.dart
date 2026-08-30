@@ -11,7 +11,7 @@ class FlutterTextField extends StatelessWidget{
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        //primarySwatch: Colors.blue,
+        primarySwatch: Colors.blue,
       ),
       home: DashBoard(),
     );
@@ -30,16 +30,16 @@ class DashBoard extends StatelessWidget{
       ),
       body: Center(
           child: Container(
-            width: 200,
-              height: 200,
-              //child: Center(
+            width: 350,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     TextField(
+                      //keyboardType: TextInputType.phone,
                       controller: emailText,
                       //enabled: false,
                       decoration: InputDecoration(
+                        hintText: 'Enter Email',
                         focusedBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(15),
                           borderSide: BorderSide(
@@ -61,32 +61,58 @@ class DashBoard extends StatelessWidget{
                               color: Colors.pink
                             )
                           ), //
-                        suffixText: ('User Email'),
-                        suffixIcon: IconButton(
-                            icon: Icon(Icons.email, color: Colors.pink ,),
+                        //suffixText: ('User Email'),
+                        prefixIcon: IconButton(
+                            icon: Icon(Icons.phone, color: Colors.pink ,),
                           onPressed: (){
 
                           }
                         ), //
-                        prefixIcon: Icon(Icons.face)
                       ),
                       ),
                     SizedBox(height: 20),
                     TextField(
                       controller: passText,
+                      obscureText: true,
+                      obscuringCharacter: '*',
                       //enabled: false,
                       decoration: InputDecoration(
+                        hintText: 'Enter Password',
                         border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(15),
                             borderSide: BorderSide(
                               color: Colors.indigo,
-                              width: 50,
+                              width: 2,
                             ),
+                        ),
+                      ),
+                    ), //
+                    SizedBox(height: 20),
+                    ElevatedButton(
+                      onPressed: () {
+                        print('Login Button Pressed');
+                      },
+
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.lightGreen,
+                        foregroundColor: Colors.white,
+
+                        padding: EdgeInsets.symmetric(
+                          horizontal: 40,
+                          vertical: 15,
+                        ),
+                      ),
+                      child: Text(
+                        'LOGIN',
+                        style: TextStyle(
+                          fontSize: 16,
                         ),
                       ),
                     ),
                   ],
                 ),
-              )));
+          ),
+      ),
+    );
   }
 }
