@@ -23,7 +23,7 @@ class HomePage extends StatelessWidget {
       title: Text('Flutter Developer'),
 backgroundColor: Colors.pink.shade500,
       ),
-      body: Text("Hello Everyone"),
+      body: Center(child: Text("Hello Uzma")),
     );
 }}
 

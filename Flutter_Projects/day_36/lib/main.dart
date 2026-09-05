@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 void main() {
   runApp(MyProject());
@@ -37,10 +38,18 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text('Icons Widget'),
         backgroundColor: Colors.limeAccent,
       ),
-      body: Center(child: Icon(Icons.play_arrow_outlined,
-        size: 100,
-        color: Colors.limeAccent,
-      )),
+      body: Center(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(Icons.play_arrow_outlined,
+                      size: 50,
+                      color: Colors.deepOrange,
+                    ),
+              SizedBox(width: 10,),
+              FaIcon(FontAwesomeIcons.googlePay, size: 50, color: Colors.deepOrange,)
+            ],
+          )),
     );
   }
 }

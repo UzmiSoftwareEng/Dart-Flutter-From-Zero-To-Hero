@@ -25,17 +25,7 @@ class DashBoardScreen extends StatelessWidget{
         title: Text('Hello Everyone'),
         backgroundColor: Colors.lightGreen,
       ), //
-      body: Center(
-        child: Card(
-          elevation: 15,
-          shadowColor: Colors.orange,
-          child: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Text(
-            'Uzma Mumtaz',
-            style: TextStyle(fontSize: 21),),
-        )),
-      ),
+      body: Card(child: Text('Uzma Mumtaz', style: TextStyle(fontSize: 21),)),
 ); //
   }
 }

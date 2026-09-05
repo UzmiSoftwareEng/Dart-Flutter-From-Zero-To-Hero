@@ -76,7 +76,7 @@ flutter:
   fonts:
     - family: Font Main
       fonts:
-        - asset: fonts/Miracle History.ttf
+        - asset: Assets/fonts/Emily Street.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro
