@@ -7,18 +7,28 @@ class Intropage extends StatelessWidget{
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Intro'),
+        title: Text('IntroPage'),
+        backgroundColor: Colors.purple.shade200,
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text('Hello Developers', style: TextStyle(
-              fontSize: 21,
-          fontWeight: FontWeight.bold),),
+          Center(
+            child: Text('Welcome', style: TextStyle(
+                fontSize: 21,
+            fontWeight: FontWeight.bold),),
+          ),
           SizedBox(
             height: 15,
           ),
-          ElevatedButton(onPressed: (){
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+            backgroundColor: Colors.purple.shade200,
+            shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.zero,
+    )
+            ),
+              onPressed: (){
 
             Navigator.push(
                 context, MaterialPageRoute(

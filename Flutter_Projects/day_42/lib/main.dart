@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:switching_one_screen_to_another_screen/IntroPage.dart';
 
 void main() {
-  runApp( Intropage());
+  runApp( MyApp());
 }
 
-class Intropage extends StatelessWidget {
+class MyApp extends StatelessWidget {
 
   // This widget is the root of your application.
   @override
@@ -38,7 +39,12 @@ Widget build(BuildContext context) {
 return Scaffold(
 appBar: AppBar(
 backgroundColor: Colors.cyan,
-title: Text('Flutter Developer'),
+title: Text('Switching One Screen to Another Screen'),
 ),
- body: Text('Hello Everyone')
-);}}
+ body: Center(
+   child: Container(
+     color: Colors.cyan.shade200,
+   ),
+ ),
+);
+}}
