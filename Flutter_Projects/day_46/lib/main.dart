@@ -39,6 +39,8 @@ Widget build(BuildContext context) {
       values: values,
       labels: labels,
       divisions: 10,
+      activeColor: Colors.cyan,
+      inactiveColor: Colors.cyan.shade200,
       min: 0,
       max: 2,
       onChanged: (newValue) {
