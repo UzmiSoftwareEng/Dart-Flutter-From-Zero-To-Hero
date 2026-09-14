@@ -63,7 +63,7 @@ body: Center(
   child: Container(
       width: animation.value,
       height: animation.value,
-    color: Colors.purple,
+    color: colorAnimation.value,
   ),
 )
    );
